@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trips",
+  "info": {
+    "singularName": "trip",
+    "pluralName": "trips",
+    "displayName": "Trip",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "region": {
+      "type": "enumeration",
+      "enum": [
+        "north",
+        "south",
+        "east",
+        "west"
+      ],
+      "required": true,
+      "default": "north"
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "default": "/destinations/:id"
+    },
+    "days": {
+      "type": "integer"
+    },
+    "overview": {
+      "type": "text",
+      "required": true
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "itinerary": {
+      "displayName": "itinerary",
+      "type": "component",
+      "repeatable": true,
+      "component": "text.itinerary"
+    },
+    "includes": {
+      "type": "enumeration",
+      "enum": [
+        "Ex:",
+        "morning",
+        "noon",
+        "night"
+      ],
+      "required": true
+    },
+    "excludes": {
+      "type": "enumeration",
+      "enum": [
+        "Ex:",
+        "morning",
+        "noon",
+        "night"
+      ],
+      "required": true
+    },
+    "location": {
+      "displayName": "location",
+      "type": "component",
+      "repeatable": true,
+      "component": "text.location",
+      "required": true
+    }
+  }
+}

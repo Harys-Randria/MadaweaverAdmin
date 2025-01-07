@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_itineraries",
+  "info": {
+    "displayName": "itinerary",
+    "icon": "car"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

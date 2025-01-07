@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_text_locations",
+  "info": {
+    "displayName": "location",
+    "icon": "house"
+  },
+  "options": {},
+  "attributes": {
+    "latitude": {
+      "type": "decimal"
+    },
+    "longitude": {
+      "type": "decimal",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
